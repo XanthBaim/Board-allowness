@@ -1,0 +1,73 @@
+[
+    {
+        "id": 0,
+        "question": "Are you a student of the Merchant Marine Academy?",
+        "options": ["Yes", "No"]
+    },
+    {
+        "id": 1,
+        "question": "Is your attendance mixed and have you successfully passed exams in at least half of the total number of courses of the indicative curriculum of the previous academic year or the corresponding two semesters?",
+        "options": ["Yes", "No"]
+    },
+    {
+        "id": 2,
+        "question": "Which of the following categories do you belong to?",
+        "options": [
+            "I have been rejected from the academy due to failed courses or excessive absences",
+            "I have been exceptionally re-enrolled for a 3rd time",
+            "None of the above"
+        ]
+    },
+    {
+        "id": 3,
+        "question": "Have you received the meal allowance for the same academic year before?",
+        "options": ["Yes", "No"]
+    },
+    {
+        "id": 4,
+        "question": "Which year of study are you in?",
+        "options": ["1st", "2nd to 4th", "I have exceeded 4 years of study"],
+        "next": [6, 6, 5]
+    },
+    {
+        "id": 5,
+        "question": "Have you taken a study deferment during your studies?",
+        "options": ["Yes", "No"]
+    },
+    {
+        "id": 6,
+        "question": "Which category do you belong to?",
+        "options": [
+            "Dependent member and required to file an individual tax return",
+            "Independent (non-dependent) member and required to file an individual tax return",
+            "Dependent member and not required to file an individual tax return"
+        ],
+        "next": [7, 8, 7]
+    },
+    {
+        "id": 7,
+        "question": "Are there other dependent members in your family?",
+        "options": ["Yes", "No"],
+        "next": [9, 9]
+    },
+    {
+        "id": 8,
+        "question": "Select the category that applies to you:",
+        "options": [
+            "My personal income is <strong>less than</strong> 18,000",
+            "My personal income is <strong>greater than</strong> 18,000"
+        ],
+        "next": ["submit"]
+    },
+    {
+        "id": 9,
+        "question": "Select the category that applies to you:",
+        "options": [
+            "The family income is <strong>less than</strong> 30,000 (increased by 3,000 euros for each dependent member beyond the first one)",
+            "The family income is <strong>greater than</strong> 30,000 (increased by 3,000 euros for each dependent member beyond the first one)"
+        ],
+        "next": ["submit"]
+    }
+]
+
+

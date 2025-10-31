@@ -1,0 +1,115 @@
+{
+    "PublicService": {
+        "name": "Meal Allowance for Students of the Merchant Marine Academies (AEN)",
+        "evidence": [
+            {
+                "id": 1,
+                "evs": [
+                    {
+                        "id": "ev0001",
+                        "type": "Evidence",
+                        "name": "Copy of the family income tax clearance certificate for the previous tax year.",
+                        "description": "Copy of the family income tax clearance certificate for the previous tax year."
+                    },
+                    {
+                        "id": "ev00013",
+                        "type": "Evidence",
+                        "name": "Copy of the individual income tax clearance certificate for the previous tax year.",
+                        "description": "Copy of the individual income tax clearance certificate for the previous tax year."
+                    },
+                    {
+                        "id": "ev00012",
+                        "type": "Evidence",
+                        "name": "Solemn declaration under Law 1599/1986, stating that the beneficiary student is not required to submit an individual tax return.",
+                        "description": "Required in cases where the beneficiary student is not obliged to submit an individual tax return."
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "evs": [
+                    {
+                        "id": "ev0013",
+                        "type": "Evidence",
+                        "name": "Solemn declaration of non-receipt of the allowance for the same academic year.",
+                        "description": "Solemn declaration by the student stating that the meal allowance has not been received for the same academic year previously."
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "evs": [
+                    {
+                        "id": "ev0002",
+                        "type": "Evidence",
+                        "name": "Copy of the beneficiary’s bank account.",
+                        "description": "Copy of the beneficiary student's bank account, showing the account holder's details and the IBAN number."
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "evs": [
+                    {
+                        "id": "ev0004",
+                        "type": "Evidence",
+                        "name": "Certificate of studies (mixed attendance – satisfactory performance).",
+                        "description": "As Appendix C, issued by the AEN where the student is enrolled. No Certificate of Satisfactory Performance (Appendix C) is issued for the meal allowance to students who are in their second year (having failed courses or exceeded the maximum number of absences), students exceptionally re-enrolled for a third time, or students who have exceeded four years of study during the academic year 2024–2025, except in cases of study suspension."
+                    },
+                    {
+                        "id": "ev00041",
+                        "type": "Evidence",
+                        "name": "Certificate of enrollment.",
+                        "description": "Required only for first-year students."
+                    },
+                    {
+                        "id": "ev00042",
+                        "type": "Evidence",
+                        "name": "Certificate of satisfactory performance.",
+                        "description": "A certificate of satisfactory performance may be issued for students who have suspended their studies for up to two academic years due to serious reasons such as military service, certified serious illness, or employment on a commercial ship (see Article 22 of Law 2638/98 & Article 30 of the Internal Regulation of AEN), provided that they have attended the AEN."
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "evs": [
+                    {
+                        "id": "ev0003",
+                        "type": "Evidence",
+                        "name": "Individual tax returns of dependent family members or Solemn Declaration stating that an individual tax return has not been submitted.",
+                        "description": "Required in cases where there are multiple dependent family members."
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "evs": [
+                    {
+                        "id": "ev0005",
+                        "type": "Evidence",
+                        "name": "Certificate of family status.",
+                        "description": "Certificate of family status issued within the last six months from the date of application submission to the AEN."
+                    }
+                ]
+            }
+        ],
+        "criterion_requirments": [
+            {
+                "id": "cr0001",
+                "name": "The student must be enrolled in a mixed attendance program."
+            },
+            {
+                "id": "cr0002",
+                "name": "The student must have successfully passed exams in at least half of the total number of courses from the indicative study program of the previous year or the corresponding two semesters."
+            },
+            {
+                "id": "cr0003",
+                "name": "The annual family income and the student’s individual income must not exceed thirty thousand (30,000) euros, increased by three thousand (3,000) euros for each dependent child beyond the first, in cases where the student is a dependent child and required to file an individual tax return."
+            },
+            {
+                "id": "cr0004",
+                "name": "The student’s individual income must not exceed eighteen thousand (18,000) euros, in cases where the student is not a dependent child and is required to file an individual tax return."
+            }
+        ]
+    }
+}
