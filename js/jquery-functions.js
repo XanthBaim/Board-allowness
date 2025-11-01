@@ -122,42 +122,44 @@ $("document").ready(function () {
       });
   }
 
-  function getEvidencesById(id, elementId = null) {
+    function getEvidencesById(id, elementId = null) {
+
     var selectedEvidence = 
-    currentLanguage === "greek"
-      ?  all_evidences
-      :  all_evidences_en;
+    currentLanguage === "greek" ?  all_evidences :  all_evidences_en;
+
     selectedEvidence = selectedEvidence.PublicService.evidence.find(
-      (evidence) => evidence.id === id
-    );
+      (evidence) => evidence.id === id);
 
     if (!selectedEvidence) {
-    
       console.log(`Evidence with ID '${id}' not found.`);
     } 
+
     const evidenceListElement = document.getElementById("evidences");
     if (!evidenceListElement) {
-    console.log("Δεν βρέθηκε το στοιχείο #evidences στο DOM.");
+    console.log("Δεν βρέθηκε το στοιχείο #evidences στο HTML.");
     }
+
     if (elementId) {
       const evItem = selectedEvidence.evs.find(
         (ev) => ev.id === elementId
       );
-          if (evItem) {
-            const listItem = document.createElement("li");
-            listItem.textContent = evItem.name;
-            evidenceListElement.appendChild(listItem);
-          } else {
-            console.warn(`Το element με ID '${elementId}' δεν βρέθηκε στο evidence ${id}.`);
-          }
-        } 
-        else{
-          selectedEvidence.evs.forEach((evsItem) => {
+
+      if (evItem) {
+        const listItem = document.createElement("li");
+        listItem.textContent = evItem.name;
+        evidenceListElement.appendChild(listItem);
+      } else {
+          console.warn(`Το element με ID '${elementId}' δεν βρέθηκε στο evidence ${id}.`);
+      }
+    } 
+    else{
+      selectedEvidence.evs.forEach((evsItem) => {
           const listItem = document.createElement("li");
-          listItem.textContent = ev.name;
-          evidenceListElement.appendChild(listItem);});} 
-          }
-    
+          listItem.textContent = evsItem.name;
+          evidenceListElement.appendChild(listItem);
+      });
+    } 
+  }
   
 
   //text added in the final result
@@ -347,13 +349,14 @@ $("document").ready(function () {
       getEvidencesById(2);
       getEvidencesById(3);
     }
-    if (allAnswers[4] === "1") {
+   if (allAnswers[4] === "1") {
       getEvidencesById(4,"ev00041");
     } else if (allAnswers[4] === "2") {
       getEvidencesById(4,"ev0004");
-    } 
-    if (allAnswers[5] === "1"){
+    } else {
+       if (allAnswers[5] === "1"){
       getEvidencesById(4, "ev00042");
+      }
     }
     if (allAnswers[6] === "1") {
       getEvidencesById(1,"ev0001");
