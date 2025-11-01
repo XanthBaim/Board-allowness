@@ -340,7 +340,6 @@ $("document").ready(function () {
     var allAnswers = [];
     // currentLanguage === "greek" ? result = "Πρέπει να υποβάλετε id1": result = "You must submit id1";
 
-    getEvidencesById(1);
     for (var i = 0; i < totalQuestions; i++) {
       var answer = sessionStorage.getItem("answer_" + i);
       allAnswers.push(answer);
