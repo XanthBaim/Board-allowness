@@ -363,6 +363,7 @@ $("document").ready(function () {
     } else if (allAnswers[6] === "2") {
       getEvidencesById(1,"ev00013");
     } else if (allAnswers[6] === "3") {
+      getEvidencesById(1,"ev0001");
       getEvidencesById(1,"ev00012");
     } 
     if (allAnswers[7] === "1") {
